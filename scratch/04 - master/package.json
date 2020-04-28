@@ -1,0 +1,27 @@
+{
+  "name": "phaser-from-scratch",
+  "version": "1.0.1",
+  "description": "A minimal Phaser framework",
+  "main": "gulp scripts",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anonymous",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazimboudeffa/phaser-mini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nazimboudeffa/phaser-mini/issues"
+  },
+  "homepage": "https://github.com/nazimboudeffa/phaser-mini#readme"
+}

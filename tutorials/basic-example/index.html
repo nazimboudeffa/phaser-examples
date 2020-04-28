@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phaser Example</title>
+    <script src="../../lib/phaser.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create });
+      function preload () {
+        game.load.image('logo', '../../assets/phaser1.png');
+      }
+      function create () {
+        game.add.image(0, 0, 'logo');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script src="Pixi.js" charset="utf-8"></script>
+    <script src="Matrix.js" charset="utf-8"></script>
+    <script src="Point.js" charset="utf-8"></script>
+    <script src="Rectangle.js" charset="utf-8"></script>
+    <script src="DisplayObject.js" charset="utf-8"></script>
+    <script src="DisplayObjectContainer.js" charset="utf-8"></script>
+    <script src="Stage.js" charset="utf-8"></script>
+    <script src="BaseTexture.js" charset="utf-8"></script>
+    <script src="Texture.js" charset="utf-8"></script>
+    <script src="Sprite.js" charset="utf-8"></script>
+    <script src="CanvasRenderer.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+      var app = new PIXI.Stage(0x0000ff, false);
+      var sprite = PIXI.Sprite.fromImage('phaser1.png');
+
+      app.addChild(sprite);
+
+      var renderer = new PIXI.CanvasRenderer(600, 480);
+      document.body.appendChild( renderer.view );
+
+      renderer.render(app);
+      renderer.renderDisplayObject(sprite);
+
+    </script>
+  </body>
+</html>
