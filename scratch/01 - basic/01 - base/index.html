@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Phaser Dude</title>
+  </head>
+  <body>
+    <canvas id = "canvas"></canvas>
+    <script>
+      (function(){
+
+        var canvas = document.getElementById('canvas');
+        canvas.width = 400;
+        canvas.height = 300;
+        var context = canvas.getContext('2d');
+
+        var image = new Image();
+        image.src = 'https://raw.githubusercontent.com/nazimboudeffa/assets/master/sprites/phaser-dude.png';
+
+        //we use an event listener to be sure that the image has been loaded
+        image.addEventListener('load', function() {
+          context.drawImage(image, 100, 100);
+        }, false);
+
+      })();
+    </script>
+  </body>
+</html>
